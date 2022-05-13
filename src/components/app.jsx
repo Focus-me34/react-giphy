@@ -17,14 +17,14 @@ class App extends Component {
 
     this.search("DBZ");
     // this.changeId("jlzggZ8GntqZ6v3ONs")
-    this.changeId = this.changeId.bind(this);
+    // this.changeId = this.changeId.bind(this);
   }
 
   search = (query) => {
     giphy("2bGP1MrqRQrMuFpRleXi5AN1fIb9KYz8").search({
       q: query,
       rating: 'g',
-      limit: 21
+      limit: 50
     }, (error, result) => {
       this.setState({ gifs: result.data });
       // result contains gif data!
