@@ -3,8 +3,7 @@ import React, { Component } from "react"
 class Gif extends Component {
 
   handleClick = () => {
-    if (this.props.changeId)
-      this.props.changeId(this.props.id)
+    this.props.changeId(this.props.id)
   }
 
   render() {
